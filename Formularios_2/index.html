@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios 2</title>
+</head>
+
+<body>
+    <h1>Formulario 1</h1>
+    <section class="ej">
+        <h2>2.1</h2>
+        <div class="group">
+            <button class="btn21" id="btn7">7</button>
+            <button class="btn21" id="btn8">8</button>
+            <button class="btn21" id="btn9">9</button>
+            <button class="btn21" id="btndivide">/</button>
+
+        </div>
+        <div class="group">
+            <button class="btn21" id="btn4">4</button>
+            <button class="btn21" id="btn5">5</button>
+            <button class="btn21" id="btn6">6</button>
+            <button class="btn21" id="btnmultiply">*</button>
+
+        </div>
+
+        <div class="group">
+            <button class="btn21" id="btn1">1</button>
+            <button class="btn21" id="btn2">2</button>
+            <button class="btn21" id="btn3">3</button>
+            <button class="btn21" id="btnadd">+</button>
+
+        </div>
+
+        <div class="group">
+            <button class="btn21" id="btn0">0</button>
+
+            <button class="btn21" id="btnequal" style="
+            width: 70px;
+        ">=</button>
+            <button class="btn21" id="btndot">.</button>
+
+        </div>
+    </section>
+    <section class="ej">
+        <h2>2.2</h2>
+        <label for="name">Ingrese su nombre:</label>
+        <input type="text" id="name" name="name" placeholder="Ingrese su nombre">
+        <label for="photo">Seleccione la foto</label>
+        <input type="file" id="photo" name="photo" accept="image/png, image/gif, image/jpeg">
+    </section>
+    <section>
+        <h2>2.3</h2>
+        <form action="">
+            <fieldset>
+                <legend>Datos personales</legend>
+                <label for="name">Nombre y apellidos</label>
+                <input type="text" id="name" name="name" placeholder="Ingrese su nombre">
+                <label for="dni">DNI</label>
+                <input type="text" id="dni" name="dni" placeholder="Ingrese su DNI">
+                <label for="birthdate">Fecha de nacimiento</label>
+                <input type="date" id="birthdate" name="birthdate">
+                <label for="address">Direccion</label>
+                <input type="text" id="address" name="address" placeholder="Ingrese su direccion">
+            </fieldset>
+            <fieldset>
+                <legend>Datos laborales</legend>
+                <label for="company">Nombre de la empresa</label>
+                <input type="text" id="company" name="company" placeholder="Ingrese el nombre de la empresa">
+                <label for="activity">Actividad</label>
+                <input type="text" id="activity" name="activity" placeholder="Ingrese la actividad">
+                <label for="address">Direccion</label>
+                <input type="text" id="address" name="address" placeholder="Ingrese la direccion de la empresa">
+            </fieldset>
+        </form>
+        <button type="submit">Enviar</button>
+    </section>
+    <section>
+        <h2>2.4</h2>
+        <form action="">
+            <label for="name">Ingrese su nombre</label>
+            <input type="text" id="name" name="name" placeholder="Ingrese su nombre">
+            <br>
+            <label for="age">Es mayor de edad?</label>
+            <input type="radio" id="age" name="age" value="si" checked>Si
+            <input type="radio" id="age" name="age" value="no">No
+            <br>
+            <label for="phone">Ingrese su telefono</label>
+            <input type="tel" id="phone" name="phone" placeholder="+34">
+            <br>
+            <label for="comments">Ingrese sus comentarios</label>
+            <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    <section>
+        <h2>2.5</h2>
+        <!-- Crear una matriz de 3x3 campos de texto -->
+        <form action="">
+            <div class="group">
+                <input type="text" name="" id="" tabindex="1">
+                <input type="text" name="" id="" tabindex="4">
+                <input type="text" name="" id="" tabindex="7">
+            </div>
+            <div class="group">
+                <input type="text" name="" id="" tabindex="2">
+                <input type="text" name="" id="" tabindex="5">
+                <input type="text" name="" id="" tabindex="8">
+            </div>
+            <div class="group">
+                <input type="text" name="" id="" tabindex="3">
+                <input type="text" name="" id="" tabindex="6">
+                <input type="text" name="" id="" tabindex="9">
+            </div>
+
+        </form>
+    </section>
+    <section>
+        <h2>2.6</h2>
+        <form action="">
+            <input type="radio" disabled>Niños <br>
+            <input type="radio">Adolescentes <br>
+            <input type="radio">Mayores <br>
+            <button type="submit">Enviar
+            </button>
+        </form>
+    </section>
+    <section>
+        <h2>2.7</h2>
+        <form action="">
+            <label for="user">Usuario</label>
+            <input type="text" name="user" id="user" maxlength="20">
+            <label for="password">Contraseña</label>
+            <input type="password" name="password" id="password" maxlength="12">
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    <section>
+        <h2>2.8</h2>
+        <form action="">
+            <input type="text" name="empresa" id="empresan" placeholder="Lorem Ipsum SL" readonly>
+            <textarea name="empresatext" id="empresatext" cols="30" rows="10"
+                readonly>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor rerum provident neque ratione adipisci earum consequatur, magnam laboriosam ipsam voluptatibus iusto dolores ipsum quas esse at necessitatibus obcaecati facere autem?</textarea>
+        </form>
+    </section>
+    <section>
+        <h2>2.9</h2>
+        <form action="">
+            <h3>Reclamos</h3>
+            <label for="name">Nombre</label>
+            <input type="text" name="name" id="name" placeholder="Ingrese su nombre">
+            <label for="address">Ingrese su dirección</label>
+            <input type="text" name="address" id="address" placeholder="Ingrese su dirección">
+            <label for="problem">Informe del problema:</label>
+            <textarea name="problem" id="problem" cols="30" rows="10"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    <section>
+        <h2>2.10</h2>
+        <form action="">
+            <label for="name">Nombre</label>
+            <input type="text" name="name" id="name" placeholder="Ingrese su nombre">
+            <label for="mail">Mail</label>
+            <input type="email" name="mail" id="mail" placeholder="Ingrese su mail">
+            <label for="comments">Comentarios</label>
+            <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+            <button type="submit">Enviar</button>
+    </section>
+</body>
+<style>
+    html,
+    body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        width: 95vw;
+        height: 95vh;
+        align-items: center;
+        justify-content: center;
+        align-self: center;
+
+    }
+
+    section {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 0.05rem solid #dcdcdc;
+    }
+
+    .btn21 {
+        margin: 3px;
+        padding: 5px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .group {
+        display: block;
+    }
+</style>
+
+</html>

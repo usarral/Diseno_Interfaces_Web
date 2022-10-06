@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios 1 - Carlos Sesma </title>
+</head>
+
+<body>
+    <h1>Formulario 1</h1>
+    <section class="ej">
+        <h2>1.1</h2>
+        <form action="">
+            <label for="name11">Introduce tu nombre</label>
+            <input type="text" name="name11" id="name11">
+            <br>
+            <label for="languages">Seleccione los lenguajes que conoce:</label>
+            <div id="languages">
+                <input type="checkbox" name="java" id="java">Java
+                <input type="checkbox" name="c++" id="c++">C++
+                <input type="checkbox" name="c" id="c">C
+                <input type="checkbox" name="c#" id="c#">C#
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    <section class="ej">
+        <h2>1.2</h2>
+        <form action="">
+            <label for="name12">Introduce tu nombre</label>
+            <input type="text" name="name12" id="name12">
+            <br>
+            <label for="email">Introduce tu mail</label>
+            <input type="email" name="email" id="email">
+            <br>
+            <label for="comments">Comentarios:</label>
+            <textarea name="comments" id="comments"></textarea>
+            <br>
+            <button type="submit">Enviar</button>
+
+        </form>
+    </section>
+    <section class="ej">
+        <h2>1.3</h2>
+        <form action="">
+            <label for="name13">Introduce tu nombre</label>
+            <input type="text" name="name13" id="name13">
+            <br>
+            <label for="studies" id="estudios">Seleccione el máximo nivel de estudios que tiene</label>
+            <div id="studies">
+                <input type="radio" name="studies" id="studies1" value="Sin estudios">Sin estudios
+                <input type="radio" name="studies" id="studies2" value="Primario">Primario
+                <input type="radio" name="studies" id="studies3" value="Secundario">Secundario
+                <input type="radio" name="studies" id="studies4" value="Universitario">Universitario
+            </div>
+
+            <button type="submit">Enviar</button>
+
+        </form>
+    </section>
+    <section class="ej">
+        <h2>1.4</h2>
+        <form action="">
+            <label for="colores">Seleccione uno o varios colores (Presione Ctrl para seleccionar varios colores)</label>
+
+            <select name="colores" id="colores" multiple>
+                <option value="rojo">Rojo</option>
+                <option value="verde">Verde</option>
+                <option value="azul">Azul</option>
+                <option value="amarillo">Amarillo</option>
+                <button type="submit">Enviar</button>
+            </select>
+        </form>
+    </section>
+    <section class="ej">
+        <h2>1.5</h2>
+        <form action="">
+            <label for="frutas">Seleccione una fruta o verdura</label>
+            <select name="frutas" id="frutas">
+                <optgroup label="Fruta">
+                    <option value="naranjas">Naranjas</option>
+                    <option value="manzanas">Manzanas</option>
+                    <option value="frutilla">Frutilla</option>
+                    <option value="durazno">Durazno</option>
+                    <option value="ciruela">Ciruela</option>
+                </optgroup>
+
+                <optgroup label="Verdura">
+                    <option value="lechuga">Lechuga</option>
+                    <option value="acelga">Acelga</option>
+                    <option value="zapallo">Zapallo</option>
+                    <option value="papas">Papas</option>
+                    <option value="batatas">Batatas</option>
+                    <option value="zanahorias">Zanahorias</option>
+                    <option value="rabanitos">Rabanitos</option>
+                    <option value="calabaza">Calabaza</option>
+                </optgroup>
+            </select>
+        </form>
+    </section>
+</body>
+<style>
+    html,
+    body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        width: 95vw;
+        height: 95vh;
+        align-items: center;
+        justify-content: center;
+        align-self: center;
+
+    }
+
+    section {
+        width: 100%;
+        height: fit-content;
+         display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 0.05rem solid #dcdcdc;
+    }
+</style>
+
+</html>
