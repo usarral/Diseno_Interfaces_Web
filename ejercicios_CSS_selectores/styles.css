@@ -1,0 +1,43 @@
+li{
+    line-height: 50px;
+}
+
+p:nth-of-type(2) {
+    font-weight: bold;
+}
+
+a[href^="http:"] {
+    background: url("./external-link.png") no-repeat left;
+    padding: 50px;
+}
+
+a[href$=".zip"] {
+    background: url("./zip-link.png") no-repeat left;
+    padding: 60px;
+    -o-background-size:40px auto;
+-webkit-background-size:40px auto;
+-moz-background-size:40px auto;
+background-size:40px auto;
+}
+a[href$=".pdf"] {
+    background: url("./pdf-link.png") no-repeat left;
+    padding: 60px;
+    -o-background-size:40px auto;
+-webkit-background-size:40px auto;
+-moz-background-size:40px auto;
+background-size:40px auto;
+}
+a{
+    background: url("./internal-link.png") no-repeat left;
+    padding: 60px;
+    -o-background-size:40px auto;
+-webkit-background-size:40px auto;
+-moz-background-size:40px auto;
+background-size:40px auto;
+}
+p span{
+    background-color: yellow;
+    font-size: 110%;
+}
+
+
