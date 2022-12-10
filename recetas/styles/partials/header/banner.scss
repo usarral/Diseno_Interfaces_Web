@@ -1,0 +1,23 @@
+:root {
+    --banner-background-color: #3f2701;
+    --banner-title-color: #eee;
+}
+
+.banner {
+    align-items: center;
+    background-color: var(--banner-background-color);
+    display: flex;
+    flex-wrap: nowrap;
+    height: 6.25rem;
+    justify-content: center;
+
+    &__logo {
+        align-self: flex-start;
+        left: 1.25rem;
+        position: absolute;
+    }
+
+    &__title {
+        color: var(--banner-title-color);
+    }
+}

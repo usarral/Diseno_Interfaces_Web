@@ -28,14 +28,37 @@
             <h1 class="banner__title">Postres Naturales </h1>
         </div>
         <nav class="header__nav nav">
-            <div class="nav__item__dropdown dropdown"> <a class="nav__item" href="#">Recetas</a> <a
-                    class="dropdown__link" href="#">Tiramisú</a> </div>
+            <!-- <div class="nav__item__dropdown ">
+                <a class="nav__item" href="#">Recetas</a>
+                <br>
+                <div class="dropdown">
+                    <a class="dropdown__link" href="#tiramisu">Tiramisú</a>
+                    <a class="dropdown__link" href="#arrozleche">Arroz con leche</a>
+                    <a class="dropdown__link" href="#dulceleche">Dulce de leche</a>
+                    <a class="dropdown__link" href="#cremacatalan">Crema Catalana</a>
+                    <a class="dropdown__link" href="#tartachocolate">Tarta de chocolate</a>
+                    <a class="dropdown__link" href="#tartamanzana">Tarta de manzana</a>
+
+                </div> -->
+            <div class="dropdown">
+                <button class="dropdown__btn">Dropdown
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown__content">
+                    <a class="dropdown__link" href="#tiramisu">Tiramisú</a>
+                    <a class="dropdown__link" href="#arrozleche">Arroz con leche</a>
+                    <a class="dropdown__link" href="#dulceleche">Dulce de leche</a>
+                    <a class="dropdown__link" href="#cremacatalana">Crema Catalana</a>
+                    <a class="dropdown__link" href="#tartachocolate">Tarta de chocolate</a>
+                    <a class="dropdown__link" href="#tartamanzana">Tarta de manzana</a>
+                </div>
+            </div>
         </nav>
     </div>
     <section>
         <div class="content">
-            <div class="content__item">
-                <input class="content__item__twocolumn" type="checkbox">2 columnas</input>
+            <div class="content__item" id="tiramisu">
+                <input class="content__item__twocol" type="checkbox">2 columnas</input>
                 <input class="content__item__english" type="checkbox">English</input> <img class="content__item__image"
                     src="./assets/miniaturas/tiramisu.jpg">
                 <h2 class="content__item__title">Tiramisú</h2>
@@ -59,18 +82,20 @@
                     cream. Sift over the last layer a little dark chocolate powder. Tiramisu is a dessert that should be
                     in the fridge for a few hours. </p>
             </div>
-            <div class="content__item"> <input class="content__item__twocolumn" type="checkbox">2 columnas</input>
+            <div class="content__item" id="arrozleche"> <input class="content__item__twocol" type="checkbox">2
+                columnas</input>
                 <input class="content__item__english" type="checkbox">English</input> <img class="content__item__image"
                     src="./assets/miniaturas/arroz_leche.jpg">
                 <h2 class="content__item__title">Arroz con leche</h2>
-                <p class="content__item__text__s">
+                <p class="content__item__text__s content__item__text">
                     Ponemos a cocer la leche, con la ramita de canela, el azúcar y la
                     piel de limón. Lavamos el arroz con abundante agua fría para quitarle el almidón. Cuando la
                     leche cueza, añadimos el arroz y cocemos a fuego medio / bajo casi una hora, hasta que el arroz
                     esté blando y la leche haya espesado lo suficiente (aquí se puede controlar por gustos, arroz
                     con leche más espeso o más líquido), retiramos la corteza de limón y la canela en rama y
                     servimos en cuencos, dejamos enfriar y espolvoreados por encima con canela en polvo. </p>
-                <p class="content__item__text__e"> We put the milk to cook, with the cinnamon stick, the sugar and
+                <p class="content__item__text__e content__item__text"> We put the milk to cook, with the cinnamon stick,
+                    the sugar and
                     the
                     skin of lemon. Wash the rice with plenty of cold water to remove the starch. When the milk
                     cooks, add the rice and cook over medium/low heat for almost an hour, until the rice is soft and
@@ -78,7 +103,9 @@
                     either more liquid), remove the lemon rind and the cinnamon stick and serve in bowls, let cool
                     and sprinkled above with cinnamon powder. </p>
             </div>
-            <div class="content__item"> <input class="content__item__twocolumn" type="checkbox">2 columnas</input>
+            <div class="content__item" id="dulceleche">
+                <input class="content__item__twocol" type="checkbox">2
+                columnas</input>
                 <input class="content__item__english" type="checkbox">English</input> <img class="content__item__image"
                     src="./assets/miniaturas/dulce_leche.jpg">
                 <h2 class="content__item__title">Dulce de leche</h2>
@@ -105,7 +132,8 @@
                     and while stirring, it can be rest the container on cold water to help warm up faster
                 </p>
             </div>
-            <div class="content__item"> <input class="content__item__twocolumn" type="checkbox">2 columnas</input>
+            <div class="content__item" id="cremacatalana">
+                <input class="content__item__twocol" type="checkbox">2 columnas</input>
                 <input class="content__item__english" type="checkbox">English</input> <img class="content__item__image"
                     src="./assets/miniaturas/crema_catalana.jpg">
                 <h2 class="content__item__title">Crema Catalana</h2>
@@ -127,7 +155,8 @@
                     sear to create a caramel crust. It is served hot.
                 </p>
             </div>
-            <div class="content__item"> <input class="content__item__twocolumn" type="checkbox">2 columnas</input>
+            <div class="content__item" id="tartachocolate">
+                <input class="content__item__twocol" type="checkbox">2 columnas</input>
                 <input class="content__item__english" type="checkbox">English</input> <img class="content__item__image"
                     src="./assets/miniaturas/tarta_chocolate.jpg">
                 <h2 class="content__item__title">Tarta de chocolate</h2>
@@ -150,7 +179,8 @@
                     make a base, then we place a layer of chocolate, another of cookies
                 </p>
             </div>
-            <div class="content__item"> <input class="content__item__twocolumn" type="checkbox">2 columnas</input>
+            <div class="content__item" id="tartamanzana">
+                <input class="content__item__twocol" type="checkbox">2 columnas</input>
                 <input class="content__item__english" type="checkbox">English</input> <img class="content__item__image"
                     src="./assets/miniaturas/tarta_manzana.jpg">
                 <h2 class="content__item__title">Tarta de manzana</h2>

@@ -1,0 +1,76 @@
+:root {
+    --nav-accent: #3a8f41;
+    --nav-background-color: #111;
+    --nav-link-color: #fff;
+
+    --dropdown-background-color: #f9f9f9;
+    --dropdown-hover-background-color: #f1f1f1;
+    --dropdown-link-color: #000;
+}
+
+.nav {
+    background-color: var(--nav-background-color);
+    overflow: hidden;
+
+    /* Links inside the navbar */
+    & a {
+        color: var(--nav-link-color);
+        float: left;
+        font-size: 16px;
+        padding: 14px 16px;
+        text-align: center;
+        text-decoration: none;
+    }
+}
+
+
+
+/* The dropdown container */
+.dropdown {
+    float: left;
+    overflow: hidden;
+
+    /* Dropdown button */
+    &__btn {
+        background-color: inherit;
+        border: none;
+        color: var(--nav-link-color);
+        font-family: inherit;
+        font-size: 16px;
+        margin: 0;
+        outline: none;
+        padding: 14px 16px;
+    }
+
+    &:hover &__btn {
+        background-color: var(--nav-accent);
+    }
+
+    &__content {
+        background-color: var(--dropdown-background-color);
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        display: none;
+        min-width: 160px;
+        position: absolute;
+        z-index: 1;
+
+        & a {
+            color: var(--dropdown-link-color);
+            display: block;
+            float: none;
+            padding: 12px 16px;
+            text-align: left;
+
+            &:hover {
+                background-color: var(--dropdown-hover-background-color);
+            }
+        }
+    }
+
+    /* Show the dropdown menu on hover */
+    &:hover &__content {
+        display: block;
+    }
+
+
+}

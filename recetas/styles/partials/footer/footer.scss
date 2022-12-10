@@ -1,20 +1,25 @@
+:root {
+    --footer-background-color: #000;
+    --footer-text-color: #fff;
+}
+
 .footer {
-    background-color: #000;
+    background-color: var(--footer-background-color);
     padding: 1rem;
 
     &__content {
-        color: #fff;
+        color: var(--footer-text-color);
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: space-between;
 
         &__right {
-            right: 1rem;
+            margin: 1rem;
         }
 
         &__left {
-            left: 1rem;
+            margin: 1rem;
         }
 
     }

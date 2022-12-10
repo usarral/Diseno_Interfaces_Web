@@ -1,58 +1,18 @@
+:root {
+    --header-background-color: #fff;
+}
+
 .header {
-    width: 100%;
+    background-color: var(--header-background-color);
     display: flex;
     flex-direction: column;
-    background-color: #fff;
+    width: 100%;
 
     &__image {
         margin-bottom: .3125rem;
     }
 
-    &__banner {
-        background-color: #3f2701;
-    }
-
-    &__nav {
-        background-color: #111;
-
-    }
 }
 
-
-.banner {
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    height: 6.25rem;
-    justify-content: center;
-
-    &__logo {
-        position: absolute;
-        left: 1.25rem;
-        align-self: flex-start;
-    }
-
-    &__title {
-        color: #eee;
-    }
-}
-
-.nav {
-    display: flex;
-    flex-wrap: nowrap;
-    align-content: center;
-    justify-content: flex-start;
-    align-items: center;
-
-    &__item {
-        color: #eee;
-        height: 100%;
-        padding: .625rem;
-        float: left;
-        font-size: 1rem;
-    }
-
-    &__item:hover {
-        background-color: #3d8e41;
-    }
-}
+@import url('./banner.css');
+@import url('./nav.css');
