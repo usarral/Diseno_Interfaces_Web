@@ -12,7 +12,6 @@
     background-color: var(--nav-background-color);
     overflow: hidden;
 
-    /* Links inside the navbar */
     & a {
         color: var(--nav-link-color);
         float: left;
@@ -25,12 +24,10 @@
 
 
 
-/* The dropdown container */
 .dropdown {
     float: left;
     overflow: hidden;
 
-    /* Dropdown button */
     &__btn {
         background-color: inherit;
         border: none;
@@ -67,7 +64,6 @@
         }
     }
 
-    /* Show the dropdown menu on hover */
     &:hover &__content {
         display: block;
     }

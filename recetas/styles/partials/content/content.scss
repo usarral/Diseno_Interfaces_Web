@@ -1,6 +1,7 @@
 :root {
     --content-item-background-color: #eeedef;
-    --content-item-border-color: #ff0000;
+    --content-item-border-color: #000;
+    --content-item-border-active-color: #f00;
     --content-item-image-border-color: #000;
 }
 
@@ -15,7 +16,6 @@
         padding: .625rem;
         position: relative;
 
-        //==========================================
 
 
         &__twocol:checked~&__text__s {
@@ -27,7 +27,6 @@
         }
 
 
-        //==============================================
         &__english:checked~&__text__s {
             display: none;
 
