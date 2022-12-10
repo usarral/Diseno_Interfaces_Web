@@ -1,0 +1,53 @@
+.content {
+    width: 80vw;
+    margin: 0 auto;
+
+    &__item {
+        border: .0625rem solid red;
+        margin: 1.875rem;
+        padding: .625rem;
+        position: relative;
+        background-color: #eeedef;
+
+
+        &__english:checked~&__text__s {
+            display: none;
+
+
+        }
+
+        &__english:checked~&__text__e {
+            display: flex;
+            text-align: justify;
+
+        }
+
+
+
+        &__title {
+            margin: 3.125rem 0rem 2.1875rem 0rem;
+
+            align-content: center;
+        }
+
+        &__image {
+            position: absolute;
+            top: .625rem;
+            right: .625rem;
+            border: .0625rem solid black;
+
+        }
+
+        &__text {
+            &__s {
+                display: flex;
+                text-align: justify;
+            }
+
+            &__e {
+                display: none;
+            }
+
+        }
+    }
+}

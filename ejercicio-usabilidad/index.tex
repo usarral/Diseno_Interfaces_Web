@@ -1,0 +1,171 @@
+\documentclass[a4paper,12pt]{article} %Tipo de documento
+
+
+%Insercion de paquetes.
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{graphicx} %Inserción de imágenes.
+\usepackage[table,xcdraw]{xcolor} %Detecicon de colores.
+\usepackage[most]{tcolorbox} %Para el cuadrado del nombre.
+\usepackage{fancyhdr} %Estilo de Página.
+\usepackage[hidelinks]{hyperref} %Gestion de hypervinculos.
+\usepackage{parskip} %Arreglo de la sangría del documento.
+\usepackage{geometry}
+\usepackage{listings}
+\usepackage[T1]{fontenc}
+\usepackage[backend=biber]{biblatex}
+
+
+%Variables para insertar codigo.
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{HTML}{59b300}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    numbers=left,
+    numbersep=5pt,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=2
+    }
+    \lstset{style=mystyle}
+    %Fin variables de codigo
+    
+    %Variables extras.
+    \definecolor{black}{HTML}{000000}
+    \definecolor{accentColor}{HTML}{0099BB}
+    
+    \geometry{
+        a4paper,
+left=20mm,
+right=20mm,
+top=20mm,
+bottom=20mm,
+headheight=17pt,
+}
+\bibliography{referencias}
+\fancyhf{}
+\pagestyle{fancy}
+\lhead{\Proyecto}
+\rhead{\Nombre}
+\renewcommand{\lstlistingname}{Conjunto de comandos}
+\renewcommand{\labelenumii}{\Roman{enumii}}
+\newcommand{\image}[2][1]{\includegraphics[width=#1\textwidth,height=#1\textheight,keepaspectratio]{#2}}
+\graphicspath{{img/}} %Setting the graphicspath
+
+
+
+%=============================================
+\newcommand{\Nombre}{Carlos Sesma Usarralde}
+\newcommand{\Proyecto}{Ejercicio Usabilidad}
+%=============================================
+%Incio de documento.
+\begin{document}
+
+\cfoot{\thepage}
+%Inicio de Portada.
+\begin{titlepage}
+    \begin{center}
+        \huge\textbf{\Proyecto}
+    \end{center}
+    \hfill{}
+    %Línea naranja
+    {\color{accentColor}\hrule}
+    \vfill{}
+    \begin{center}
+        \huge\textbf{Diseño de interfaces Web}
+    \end{center}
+    \vfill{}
+    \begin{center}
+        {\large{} \Nombre}
+    \end{center}
+\end{titlepage}
+%Fin de portada.
+%Inicio índice
+\clearpage{}
+\tableofcontents{}
+\thispagestyle{empty}
+\clearpage{}
+%Fin del índice
+\section{Parte 1:   Análisis de la web}
+Como primera parte de la tarea debo analizar una web desde el punto de vista de usabilidad.
+
+La pagina que he elegido para esto es \href{https://github.com}{Github}
+
+\subsection{Visibilidad de estatus del sistema}
+La pagina si que muestra visibilidad de estado ya que si quiero crear un nuevo repositorio me muestra un icono de carga mientras comprueba si el nombre del repositorio esta disponible o no.
+
+\includegraphics{01.png}
+
+\subsection{Consistencia entre el sistema y el mundo real}
+
+La pagina si que es consistente con el mundo real ya que los iconos que se muestran en la pagina son los mismos que se usan en el mundo real.
+
+Por ejemplo usa un tick verde \image[0.05]{emoji/u2705.png} para indicar que todo ha ido bien y una cruz roja \image[0.05]{emoji/u274c.png} para indicar que algo ha ido mal.
+
+\subsection{El usuario es libre y tiene el control}
+
+La 
+\subsection{Consistencia y estandares}
+
+La pagina es consistente ya que mantiene el mismo patrón de diseño, los mismos colores y los mismos iconos en todas las paginas.
+
+\subsection{Prevención de errores}
+
+La pagina si que previene errores ya que si por ejemplo quiero crear un repositorio y no pongo un nombre me muestra un mensaje de error. O si pongo un nombre que tiene caracteres no validos me muestra como se va a llamar el repositorio por si quiero cambiarlo.
+\includegraphics{02.png}
+
+\includegraphics{03.png}
+
+\subsection{Mejor reconocer que memorizar}
+En esta pagina el usuario tiene una barra de navegación en la que puede vover:
+\begin{itemize}
+    \item Al repositorio pulsando en el nombre del repositorio.
+    \item Al perfil pulsando en el nombre de usuario.
+    \item A la pagina principal pulsando en el logo de Github.
+\end{itemize}
+
+\includegraphics{04.png}
+
+\subsection{Flexibilidad y eficiencia de uso}
+La pagina es flexible ya que tiene una barra de navegación rapida en la que puedes ir a cualquier pagina del sitio web con solo pulsar en una combinación de teclas.
+
+\image{05.png}
+
+\subsection{Diseño estético y minimalista}
+La pagina es minimalista ya que no tiene elementos que no sean necesarios para el usuario.
+
+
+\subsection{Ayuda al usuario a reconocer, diagnosticar y recuperarse de los errores}
+La pagina si que ayuda al usuario a reconocer, diagnosticar y recuperarse de los errores ya que si por ejemplo me equivoco al escribir el nombre de un repositorio me muestra un mensaje de error, y, no me da una opción para volver atras pero me da un buscador para buscar el repositorio que quiero.
+
+\image{06.png}
+\subsection{Ayuda y documentación}
+
+La pagina si que tiene ayuda y documentación ya que si pulsas en el icono de ayuda te lleva a una pagina donde te explica como usar la pagina y las diferentes opciones que tiene.
+\clearpage{}
+\section{Parte 2: Sitio donde no se aplican los principios de usabilidad}
+Como sitio donde no se aplican los principios de usabilidad he elegido \href{https://www.art.yale.edu/}{Yale University Art Gallery}
+
+\image{07.png}
+
+En este sitio el diseño no es estético, ni minimalista.Además tampoco tiene consistencia.
+
+Como propuesta yo realizaría un rediseño de la interfaz de usuario del sitio completo, manteniendo un estilo minimalista y uniforme en toda la pagina.
+
+
+\clearpage{}
+% \printbibliography{}
+
+\end{document}

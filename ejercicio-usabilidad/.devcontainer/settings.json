@@ -1,0 +1,5 @@
+{
+    "latex-workshop.latex.outDir": "%DIR%",
+    "latex-workshop.synctex.afterBuild.enabled": true,
+    "latex-workshop.view.pdf.viewer": "tab"
+}

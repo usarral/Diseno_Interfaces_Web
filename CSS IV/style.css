@@ -1,0 +1,86 @@
+/*
+A body: margen de 15em,
+padding de 0,
+color de fondo a #FFD3F3 y de letra a #333333*/
+body {
+    margin: 15em;
+    padding: 0;
+    background-color: #FFD3F3;
+    color: #333333;
+}
+
+h4 {
+    margin: 0;
+    padding: 5px 0;
+}
+
+#logo {
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+
+    color: #f80000;
+}
+
+#container {
+    width: 700px;
+    height: 100%;
+    background-color: #fff;
+
+}
+
+
+#logo {
+    height: 60px;
+    background-color: #fff15d;
+    color: #000000;
+}
+
+
+#textHeader {
+    height: 2em;
+    text-align: center;
+    background-color: #F78181;
+    color: #000000;
+}
+
+
+#left {
+    float: left;
+    width: 75.5%;
+    padding: 5px;
+}
+
+
+#right {
+    float: right;
+    width: 20%;
+    padding: 10px;
+    background-color: #FFCD61;
+    color: #333333;
+}
+
+
+footer {
+    clear: both;
+    width: 100%;
+}
+
+#foot1 {
+    float: left;
+    background-color: red;
+    color: white;
+    width: 50%;
+}
+
+#foot2 {
+    float: right;
+    background-color: yellow;
+    color: #333333;
+    width: 50%;
+}
+
+/* ul y li centrado  con espacio  arribas y abajo */
+ul {
+    margin: 1em;
+}

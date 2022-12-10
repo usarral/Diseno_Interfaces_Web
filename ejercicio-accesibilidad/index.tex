@@ -1,0 +1,175 @@
+\documentclass[a4paper,12pt]{article} %Tipo de documento
+
+
+%Insercion de paquetes.
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{graphicx} %Inserción de imágenes.
+\usepackage[table,xcdraw]{xcolor} %Detecicon de colores.
+\usepackage[most]{tcolorbox} %Para el cuadrado del nombre.
+\usepackage{fancyhdr} %Estilo de Página.
+\usepackage[hidelinks]{hyperref} %Gestion de hypervinculos.
+\usepackage{parskip} %Arreglo de la sangría del documento.
+\usepackage{cite}
+
+\usepackage{geometry}
+\usepackage{listings}
+\usepackage[T1]{fontenc}
+\usepackage[backend=biber]{biblatex}
+
+
+%Variables para insertar codigo.
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{HTML}{59b300}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    numbers=left,
+    numbersep=5pt,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=2
+    }
+    \lstset{style=mystyle}
+    %Fin variables de codigo
+    
+    %Variables extras.
+    \definecolor{black}{HTML}{000000}
+    \definecolor{accentColor}{HTML}{0099BB}
+    
+    \geometry{
+        a4paper,
+left=20mm,
+right=20mm,
+top=20mm,
+bottom=20mm,
+headheight=17pt,
+}
+\bibliography{referencias}
+\fancyhf{}
+\pagestyle{fancy}
+\lhead{\Proyecto}
+\rhead{\Nombre}
+\renewcommand{\lstlistingname}{Conjunto de comandos}
+\renewcommand{\labelenumii}{\Roman{enumii}}
+\newcommand{\image}[2][1]{\includegraphics[width=#1\textwidth,height=#1\textheight,keepaspectratio]{#2}}
+\graphicspath{{img/}} %Setting the graphicspath
+
+
+
+%=============================================
+\newcommand{\Nombre}{Carlos Sesma Usarralde}
+\newcommand{\Proyecto}{Ejercicio Accesibilidad}
+%=============================================
+
+%Incio de documento.
+\begin{document}
+
+\cfoot{\thepage}
+%Inicio de Portada.
+\begin{titlepage}
+    \begin{center}
+        \huge\textbf{\Proyecto}
+    \end{center}
+    \hfill{}
+    %Línea naranja
+    {\color{accentColor}\hrule}
+    \vfill{}
+    \begin{center}
+        \huge\textbf{Diseño de interfaces Web}
+    \end{center}
+    \vfill{}
+    \begin{center}
+        {\large{} \Nombre}
+    \end{center}
+\end{titlepage}
+%Fin de portada.
+%Inicio índice
+\clearpage{}
+\tableofcontents{}
+
+\thispagestyle{empty}
+\clearpage{}
+\section{Analiza la accesibilidad de las siguientes web utilizando la herramienta \href{https://wave.webaim.org/}{Wave}}
+\subsection{\href{http://www.cpilosenlaces.com}{CPI Los Enlaces}}
+En la consulta de la web del CPIFP Los Enlaces he encontrado 4 errores, 8 errores de contraste y 19 alertas.
+\subsubsection{Imagenes sin alt }
+Error: He encontrado 2 imagenes sin texto alt
+
+Solución: Añadir etiqueta alt para que los lectores de pantalla puedan leerlo en lugar de la imagen
+
+Capturas:
+
+\image{1}
+\subsubsection{Links vacios }
+Error: He encontrado 2 enlaces que llevan a `\#' (a ningún sitio). Estos links se utilizan para alternar un elemento llamado \textit{advancedmenu}
+
+
+\subsubsection{Errores de contraste}
+La pagina tiene 8 errores de contraste ya que hay 8 elementos que tienen muy poco contraste entre ellos lo cual puede dificultar la lectura para usuarios con problemas de visión.
+
+
+
+\subsection{\href{http://educa.aragon.es}{Educa Aragón}}
+En la consulta de la web de Educa Aragón he encontrado 5 errores y 8 alertas.
+
+
+\subsection{\href{https://gdmlamerced.com}{GDM La Merced}}
+En la consulta de la web de GDM La Merced he encontrado 6 errores, 7 alertas y 9 errores de contraste.
+\subsubsection{Imagenes sin alt}
+Error: He encontrado 2 imagenes sin texto alt
+
+Solución: Añadir etiqueta alt para que los lectores de pantalla puedan leerlo en lugar de la imagen
+
+Capturas:
+
+\image{5}
+
+\subsubsection{Links vacios}
+Error: La pagina dice que tiene 4 links vacios ya que estos links tienen iconos o elementos h2. Esto la web lo detecta como que no tiene texto.
+Solución: Cambiar el orden de los elementos y poner el <a> dentro del h2 o del icono.
+
+Captura:
+
+\image{6}
+
+\section{Analiza la accesibilidad de las mismas paginas del punto anterior mediante otra herramienta de accesibilidad. Explica los errores, posibles soluciones y capturas de pantalla}
+
+
+\subsection{\href{http://www.cpilosenlaces.com}{CPI Los Enlaces}}
+
+
+\subsection{\href{http://educa.aragon.es}{Educa Aragón}}
+La pagina muestra algun error más que Wave:
+
+\image{9}
+
+
+\subsection{\href{https://gdmlamerced.com}{GDM La Merced}}
+La pagina muestra menos errores y nos muestra lo siguiente:
+Captura:
+
+\image{7}
+
+\subsubsection{Los elementos <frame> o <iframe> no tienen título}
+Error: Los marcos no tienen title, lo cual no permite a los lectores de pantalla describir el contenido del marco
+Solución: Añadir atributo title.
+
+\image{8}
+
+
+\section{Enumera 3 pruebas que permiten evaluar la accesibilidad de un sitio que puedas realizar, explicar y mostrar con capturas}
+
+
+\end{document}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Idiomas</title>
+  <style>
+    #bandera {
+      width: 160px;
+      height: 100px;
+      background-image: url("brasil.png");
+    }
+  </style>
+</head>
+
+<body>
+  <input type="radio" id="idioma1" name="idioma" checked><label for="idioma1">England</label><br>
+  <input type="radio" id="idioma2" name="idioma"><label for="idioma2">Brasil</label><br>
+  <table>
+
+
+    <tbody>
+
+      <tr>
+        <td id="bandera"></td>
+      </tr>
+      <tr class="texto-ingles">
+        <td>Hello World !</td>
+      </tr>
+      <tr class="texto-brasil">
+        <td>Olá mundo</td>
+      </tr>
+
+    </tbody>
+  </table>
+
+
+
+</body>
+<style>
+  .texto-ingles {
+    display: none;
+    /*por defecto no se muestra*/
+  }
+
+  .texto-brasil {
+    display: none;
+    /*por defecto no se muestra*/
+  }
+
+  #idioma1:checked~table #bandera {
+    background-image: url("england.png");
+    /*cambia la imagen de la bandera si England esta seleccionado*/
+
+  }
+
+  #idioma2:checked~table #bandera {
+    background-image: url("brasil.png");
+    /*cambia la imagen de la bandera si Brasil esta seleccionado*/
+  }
+
+  #idioma1:checked~table .texto-ingles {
+    display: table-row;
+    /*muestra el texto en ingles si England esta seleccionado*/
+  }
+
+  #idioma2:checked~table .texto-brasil {
+    display: table-row;
+    /*muestra el texto en portugues si Brasil esta seleccionado*/
+  }
+</style>
+
+</html>

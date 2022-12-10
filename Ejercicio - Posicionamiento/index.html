@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Posicionamiento - Carlos Sesma</title>
+</head>
+
+<body>
+    <div id="bola1" class="bola">
+        <div class="punto"><span>1</span></div>
+    </div>
+    <div id="bola2" class="bola">
+        <div class="punto"><span>2</span></div>
+
+    </div>
+    <div id="bola3" class="bola">
+        <div class="punto"><span>3</span></div>
+
+    </div>
+    <!-- <div id="bola8" class="bola">
+        <div class="punto"><span>8</span></div>
+
+    </div> -->
+</body>
+<style>
+    
+    body {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .bola {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        position: absolute;
+    }
+
+    #bola1 {
+        background-color: orange;
+        display: flex;
+        margin: 10px, 60px 10px, 60px;
+
+    }
+
+    #bola2 {
+        top: 33%;
+        background-color: green;
+
+
+    }
+
+    #bola3 {
+        top: 33%;
+        left: 60%;
+
+        background-color: blue;
+
+
+    }
+
+    span {
+        font-size: 2em;
+        /* no background: */
+        color: #000;
+        font-weight: bolder;
+        /* no background: */
+        text-shadow: 0 0 0.2em black;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    /* Span at the center of punto*/
+    .punto {
+        background-color: #fff;
+        border-radius: 50%;
+        width: 20%;
+        height: 20%;
+
+        justify-content: center;
+        align-items: center;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    /* #bola8 {
+        background-color: black;
+    } */
+</style>
+
+</html>
